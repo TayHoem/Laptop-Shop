@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  .navibar img{
+    position: absolute;
+    padding: 15px;
+    width: 75px; 
+    height: 75px;
+    cursor: pointer;
+  }
+  
+  .footer{
+    background-color: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+  }
+  .footer h1{
+    padding: 5px 0;
+    color: white;
+    text-shadow: 2px 1px grey;
+    cursor: pointer;
+  }
+  .footer a{
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+    padding-bottom: 15px;
+    border: 1px;
+    display: inline-block;
+  }
+  
+  .storebtn{
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    transition: 1s;
+  }
+  
+  .dropstore {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .storecontent {
+    display: none;
+    position: absolute;
+    background-color: rgb(203, 191, 191);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .storecontent a {
+    position: relative;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .storecontent a:hover {background-color: white;}
+  
+  .dropstore:hover .storecontent {display: block;}
+  
+  .dropstore:hover .storebtn {
+    background-color: rgb(41, 39, 39);
+    cursor: pointer;
+    border-bottom: 5px white solid;
+  }
+  .accountbtn{
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    transition: 1s;
+  }
+  
+  .dropaccount {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .accountcontent {
+    display: none;
+    position: absolute;
+    background-color: rgb(203, 191, 191);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .accountcontent a {
+    position: relative;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .accountcontent a:hover {background-color: white;}
+  
+  .dropaccount:hover .accountcontent {display: block;}
+  
+  .dropaccount:hover .accountbtn {
+    background-color: rgb(41, 39, 39);
+    cursor: pointer;
+    border-bottom: 5px white solid;
+  }
+  
+  .otherbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .otherbtn:hover{
+    border-bottom: 5px white solid;
+    background-color: rgb(41, 39, 39);
+  }
+  
+  .navibar{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    display: black;
+  }
+  .navibar::after{
+    clear: both; 
+    content: "";
+    display: table;
+  }
+  
+  .buttons{
+    position: relative;
+    padding: 27.5px 0;
+    left: 1080px;
+    cursor: pointer;
+  }
+
+  .navicon img{
+    display: none;
+  }
+
+  @media only screen and (max-width:1600px){
+    .buttons{
+      position: relative;
+      padding: 27.5px 0;
+      left: 800px;
+      cursor: pointer;
+    }
+  }
+
+  @media only screen and (max-width: 600px){
+    .buttons{
+      display: none;
+      padding: 1px;
+      top: 98px;
+      left: 0;
+      position: absolute;
+      margin-right: 70%;
+    }
+    .navibar img{
+      position: absolute;
+      padding: 15px;
+      width: 75px; 
+      height: 75px;
+      cursor: pointer;
+    }
+    .navicon img{
+      display: block;
+    }
+    .navicon:hover+.buttons, .buttons:hover{
+      display: block;
+    }
+  }

@@ -1,0 +1,55 @@
+body{
+    background-image: url(assets/whiteback.jpg);
+    overflow-x: hidden;
+}
+body h1{
+    margin: 25px;
+    border-bottom: 2px black solid;
+}
+
+.chatus{
+    margin: 70px 0;
+}
+.select{
+    flex-basis: 30%;
+    padding: 30px;
+    margin: auto;
+    width: 180px;
+    height: 100px;
+    margin-bottom: 75px ;
+    background-color: white;
+    transition: 0.5s;
+    text-align: center;
+    border: black 2px solid;
+    cursor: pointer;
+    }
+ 
+  /*col-3 Hover*/
+  .select:hover{
+   transform: translateY(-8px);
+   box-shadow: 30px 30px 10px 10px rgba(2, 23, 56, 0.1);
+   background-color: gray;
+   border: white;
+  }
+
+#imgwhatapps{
+    width: 65%;
+    left: 30px;
+}
+#imgemail{
+    width: 75%;
+}
+#imgtel{
+    width: 65%;
+}
+.logoservice{
+    width: 25%;
+    position: relative;
+    top: -30px;
+    right: 50px;
+    left: 50px;
+    margin-bottom: 50px;
+    bottom: 50px;
+    display: block;
+   }
+     

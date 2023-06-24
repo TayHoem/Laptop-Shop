@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link href="feedback.css" rel="stylesheet"/>
+    <link href="fbreceive.html" rel="stylesheet"/>
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+    <header> <!--Navigation bar-->
+        <div class="navibar">
+                    <a href="index.html"><img src="assets/BITS.png" alt="logo"></a>
+                    <div class="navicon">
+                      <img id="gear" src="assets/extralogo.png" alt="">
+                      </div>
+                    <div class="buttons">
+                    <div class="dropstore">
+                        <button class="storebtn">Store</button>
+                        <div class="storecontent">
+                          <a href="store_acer.html">Acer</a>
+                          <a href="store_dell.html">Dell</a>
+                          <a href="store_hp.html">HP</a>
+                          <a href="store_lenovo.html">Lenovo</a>
+                          <a href="store_samsung.html">Samsung</a>
+                          <a href="store_secondhand.html">Second Hand</a>
+                        </div>
+                        </div>
+                        <div class="dropaccount">
+                          <button class="accountbtn">Account</button>
+                          <div class="accountcontent">
+                            <a href="membership.html">Membership</a>
+                            <a href="register.html">Login</a>
+                            <a href="register.html">Register</a>
+                            <a href="cart.html">Cart</a>
+                          </div>
+                        </div>
+                      <a href="News_promotion.html"><button class="otherbtn">News & Promotions</button></a>
+                      <a href="feedback.html"><button class="otherbtn">Feedback</button></a>
+                    </div>
+                </div>
+            </div>  
+    </header>
+    <h2>Feedback</h2>
+    <form action="fbreceive.html">
+        <div class="form">
+        <div>
+            <p>How do you rate your overall experience?</p>
+            <input name="overallRate" id="bad" type="radio"/>
+            <label for="bad">Bad</label>
+            <input name="overallRate" id="average" type="radio" checked/>
+            <label for="average">Average</label>
+            <input name="overallRate" id="good" type="radio"/>
+            <label for="good">Good</label>
+        </div>
+        <div>
+            <label for="nameBox">First name*</label>
+            <input name="custName" id="nameBox" type="text" placeholder="First name"/>
+        </div>
+        <div>
+            <label for="nameBox">Last name*</label>
+            <input name="custName" id="nameBox" type="text" placeholder="Last name"/>
+        </div>
+        <div> 
+            <label for="ageBox">Age*</label>
+            <input name="custAge" id="ageBox" type="number" placeholder="20" min="1"/>
+        </div>
+        <div>
+            <label for="phoneBox">Phone*</label>
+            <input name="custPhone" id="phoneBox" type="tel" placeholder="+60123456789"/>
+        </div>
+        <div>
+            <label for="emailBox">Email*</label>
+            <input name="custEmail" id="emailBox" type="email" placeholder="example@gmail.com"/>
+        </div>
+        <div>
+            <label for="feedbackBox">Feedback*</label>
+            <textarea name="custFeedback" id="feedbackBox" placeholder=" Write your feedback here..."></textarea>
+        </div>
+        <div>
+            <button id="button" onclick="myFunction()">Submit Your Feedback</button>
+            <script>
+                function myFunction() {
+                    alert("Hello! Press OK if you confirm submit your feedback!");
+                }
+            </script>
+        </div>
+    </form>
+    <div class="footer">
+        <a href="index.html"><h1>BITS</h1></a>
+        <a href="support.html">Support<br></a>
+        <a href="aboutus.html">About Us</a>
+     </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="general.js" defer></script>
+<script type="text/javascript" src="register.js" defer></script>
+<link href="register.css" rel="stylesheet"/>
+<link rel="stylesheet" href="layout.css">
+</head>
+<body>
+    <header> <!--Navigation bar-->
+        <div class="navibar">
+                    <a href="index.html"><img src="assets/BITS.png" alt="logo"></a>
+                    <div class="navicon">
+                      <img id="gear" src="assets/extralogo.png" alt="">
+                      </div>
+                    <div class="buttons">
+                    <div class="dropstore">
+                        <button class="storebtn">Store</button>
+                        <div class="storecontent">
+                          <a href="store_acer.html">Acer</a>
+                          <a href="store_dell.html">Dell</a>
+                          <a href="store_hp.html">HP</a>
+                          <a href="store_lenovo.html">Lenovo</a>
+                          <a href="store_samsung.html">Samsung</a>
+                          <a href="store_secondhand.html">Second Hand</a>
+                        </div>
+                        </div>
+                        <div class="dropaccount">
+                          <button class="accountbtn">Account</button>
+                          <div class="accountcontent">
+                            <a href="membership.html">Membership</a>
+                            <a href="register.html">Login</a>
+                            <a href="register.html">Register</a>
+                            <a href="cart.html">Cart</a>
+                          </div>
+                        </div>
+                      <a href="News_promotion.html"><button class="otherbtn">News & Promotions</button></a>
+                      <a href="feedback.html"><button class="otherbtn">Feedback</button></a>
+                    </div>
+                </div>
+            </div>  
+    </header>
+    <div class="containbox">
+        <div class="formbox">
+            <div class="buttonbox" >
+                <div id="btn"></div>
+                <button type="button" class="togglebtn" onclick="log()">Login</button>
+                <button type="button" class="togglebtn" onclick="reg()">Register</button>
+            </div> 
+            <p> <input type="text" name="date" id="date" size="10"  class="numbers" disabled/> </p>
+
+            <form class="login-Reg" id="login">
+            <p></br> <input type="text" id="suName" class="inputtext" placeholder="Username" ></p></br>
+            <p><input type="password" id="sp" class="inputtext" placeholder="Password"></p>
+            <input type="button" onclick="login()" value="Submit" class="submit"/>
+            </form>
+            
+            <form class="login-Reg" id="Register">
+            <p> <input type="text" id="ruName" class="inputtext" placeholder="Username"></p>
+            <p><input type="password" id="rp" class="inputtext" placeholder="Password" ></p>
+            <p> <input id="rcp" type="password" class="inputtext" placeholder="Confirm the password" required/></p>
+            <input type="submit" onclick="register()" value="Submit" class="submit"/>
+            </form>
+
+            
+        </div>
+        
+
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("Register");
+        var z = document.getElementById("btn");
+
+        function reg(){
+            x.style.left = "-400px";
+            y.style.left = "10px";
+            z.style.left = "110px";
+            
+        }
+
+        function log(){
+            x.style.left = "10px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+            
+        }
+
+
+    </script>
+
+
+<div class="footer">
+    <a href="index.html"><h1>BITS</h1></a>
+    <a href="support.html">Support<br></a>
+    <a href="aboutus.html">About Us</a>
+ </div>
+    
+    
+
+</body>
+</html>

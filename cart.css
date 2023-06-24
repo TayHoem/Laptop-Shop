@@ -1,0 +1,72 @@
+body{
+    background-image: url(assets/whiteback.jpg); 
+    overflow-x: hidden;
+    font-size: 18px;
+}
+
+fieldset{
+    width: 38%;
+    margin-bottom: 10px;
+    border:100%;
+    border-color: black;
+    margin-left: 33%;
+    font-size: 1.15em;
+    transition: all 0.3s;
+    
+}
+fieldset:hover{
+    background-color: grey;
+    transform: translateY(-10px);
+}
+.first{
+    margin-top:3.%;
+}
+h2{
+    text-align: center;
+}
+legend#legend{
+    text-align: center;
+    font-size: larger;
+}
+img{
+    width:150px;
+}
+.img2{
+    width: 100px;
+
+}
+.img3{
+    width: 90px;
+}
+.submit{
+    margin-left:60% ;
+}
+table{
+    margin-left: 60%;
+}
+input[type=text]{
+    width: 70px;
+}
+
+.submit{
+    border:5px solid black;
+    padding: 3px;
+    margin-left: 810px;
+    font-size: larger;
+    width: 40%;
+    margin-bottom: 100px;
+    border:100%;
+    border-color: black;
+    margin-left: 33%;
+    font-size: 1.15em;
+}
+
+.Total{
+    width: 35px;
+    text-align: right;
+}
+.rm{
+    text-align: right;
+}
+
+

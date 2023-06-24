@@ -1,0 +1,103 @@
+body{
+    overflow-x: hidden;
+}
+.containbox{
+   
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    background-image: url(assets/whiteback.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.formbox{
+    width: 400px;
+    height: 500px;
+    position: relative;
+    padding: 5px;
+    margin:  6% auto;
+    overflow: hidden;
+
+}
+.buttonbox{
+    width: 200px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 30px 9px grey;
+    border-radius: 30px;
+    
+
+}
+.togglebtn{
+    padding: 20px 28px ;
+    border: 0;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 30px;
+    
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #514444, #e8eeed);
+    border-radius: 30px;
+    transition: .5s;
+}
+#date{
+    text-align: center;
+    
+}
+.login-Reg{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.inputtext{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px;
+    padding-right: 100px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid rgb(32, 30, 30);
+    outline: none;
+    background: transparent;
+    font-size: large ;
+    
+
+  
+
+}
+.submit {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 0px 70px;
+    background-color: rgb(120, 131, 137);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+#login{
+    left: 10px;
+}
+
+#Register{
+    left: 450px;
+}
+
+#date{
+    padding: 9px;
+}

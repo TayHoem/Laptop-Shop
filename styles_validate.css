@@ -1,0 +1,13 @@
+/*Validate*/
+input:focus,textarea:focus{
+   background-color: rgb(220,255,220);
+}
+
+input#name:focus:valid,input#phoneNum:focus:valid,input#cusEmail:focus:valid,input#cardNum:focus:valid{
+   background: rgb(220, 255, 220) url(Bank/rb_okay.png) no-repeat right/contain;
+}
+
+input#name:focus:invalid,input#phoneNum:focus:invalid ,input#cusEmail:focus:invalid,input#cardNum:focus:invalid{
+   background: rgb(252, 211, 210) url(Bank/rb_warning.png) no-repeat right/contain;
+}
+/*-----------------*/

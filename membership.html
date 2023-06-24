@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BITS</title>
+    <link rel="stylesheet" href="membership.css">
+    <link rel="stylesheet" href="layout.css">
+</head>
+<section>
+
+    <header> <!--Navigation bar-->
+        <div class="navibar">
+                    <a href="index.html"><img src="assets/BITS.png" alt="logo"></a>
+                    <div class="navicon">
+                      <img id="gear" src="assets/extralogo.png" alt="">
+                      </div>
+                    <div class="buttons">
+                    <div class="dropstore">
+                        <button class="storebtn">Store</button>
+                        <div class="storecontent">
+                          <a href="store_acer.html">Acer</a>
+                          <a href="store_dell.html">Dell</a>
+                          <a href="store_hp.html">HP</a>
+                          <a href="store_lenovo.html">Lenovo</a>
+                          <a href="store_samsung.html">Samsung</a>
+                          <a href="store_secondhand.html">Second Hand</a>
+                        </div>
+                        </div>
+                        <div class="dropaccount">
+                          <button class="accountbtn">Account</button>
+                          <div class="accountcontent">
+                            <a href="membership.html">Membership</a>
+                            <a href="register.html">Login</a>
+                            <a href="register.html">Register</a>
+                            <a href="cart.html">Cart</a>
+                          </div>
+                        </div>
+                      <a href="News_promotion.html"><button class="otherbtn">News & Promotions</button></a>
+                      <a href="feedback.html"><button class="otherbtn">Feedback</button></a>
+                    </div>
+                </div>
+            </div>  
+    </header>
+
+</section>
+
+
+<body class="body">
+   
+    
+    <h1>Membership</h1> 
+    <fieldset class="box">
+        <legend>Join Membership</legend>
+
+        <form action="welcomemember.html" method="get" enctype="multipart/form-data">
+                
+            <div>
+            
+                <label for="name">First Name </label>
+                <input name="fname" type="text" id="name" placeholder="your first name"><br><br>
+            </div>
+        
+            <div>
+                <label forr="name">Last Name </label>
+                <input name="lname" type="text" id="name" placeholder="your last name" /><br><br>
+            </div>
+    
+            <div>
+                <label forr="email">Email address </label>
+                <input name="emailadd" type="email" id="email" placeholder="your email address" required/><br><br>
+            </div>
+    
+            <div>
+                <label forr="phone">Phone Number </label>
+                <input name="number" type="tel" id="phone" placeholder="(nn) nnn-nnnn" required pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required/><br><br>
+            </div>
+    
+            <div>
+                <label for="bdate">Birthday Date </label>
+                <input name="birDate" id="bdate" type="date" required><br><br>
+            </div>
+    
+            <div>
+                <label id="joinmember">Join Membership?  </label>
+                <label for="fyes" id="joinmembery">Yes</label>
+                <input name="yn" id="fyes" type="radio" required>
+                <label for="fno" id="joinmembern">No</label>
+                <input name="yn" id="fno" type="radio" required><br><br>
+    
+            </div>
+    
+            <div id="button">
+                <input type="reset" value="Cancel" id="submitcancel"  >
+                <input type="submit" value="submit" id="submitcancel" >
+                
+            </div>
+        </form>
+
+       
+
+
+
+    </fieldset> 
+   
+    
+</body>
+
+<div class="footer">
+    <a href="index.html"><h1>BITS</h1></a>
+    <a href="support.html">Support<br></a>
+    <a href="aboutus.html">About Us</a>
+ </div>
+
+</html>

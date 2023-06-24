@@ -1,0 +1,232 @@
+body
+{
+  background-image: url(assets/whiteback.jpg);
+  overflow-x: hidden;
+}
+
+/* 3 Column for items in one line*/
+.store{
+  margin: 70px 0;
+  
+}
+
+.small-container
+{
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.row{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   
+ }
+
+
+ .col-3{
+   flex-basis: 30%;
+   padding: 13px;
+   margin: auto;
+   min-width: 250px;
+   margin-bottom: 30px ;
+   background-color:floralwhite;
+   transition:all 0.5s;
+   }
+
+ /*col-3 Hover*/
+ .col-3:hover{
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 9px 10px rgba(1, 15, 37, 0.1);
+  background-color: snow;
+  color: black;
+ }
+
+
+ /*Store Image*/
+.col-3 img{
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+/*Styles of the word for h3,h4,blockquote & a in store page*/
+div a
+{
+  text-decoration: none;
+ }
+
+
+ div h3{
+  font-size: 20px;
+  font-weight: 800;
+  color: #0a2f6f;
+  font-family:'Courier New', Courier, serif;
+}
+
+.col-3 h4{
+  font-size: 15px;
+  font-weight: 900;
+}
+.col-3 blockquote{
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+div h3,h4,h5,blockquote,a{
+    text-align: center;
+    color: black;
+}
+
+/*Styles button and the styels when the mouse point the button*/
+.shopbtn{
+  background:black;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  color:white;
+  cursor: grab;
+  border-radius: 10px;
+  display: block;
+  align-items: center;
+  position: relative;
+  left: 110px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100px;
+  height: 25px;
+  margin: 5px;
+}
+
+.shopbtn:hover{
+   background:darkgray;
+   color: black;
+   box-shadow: 0px 0px 10px 1px black inset;
+}
+
+/* Card */
+.card {
+    border: none;
+    border-radius: 50px;
+    justify-content: space-around;
+  }
+
+/*All LOGO*/
+
+/*Style Image Logo Acer*/
+.logoacer{
+  width: 20%;
+  position: relative;
+  top: 0px;
+  left: 50px;
+  margin-bottom: 50px;
+  display: block;
+}
+
+/*Style Image Logo dell*/
+.logodell
+{
+ width: 13%;
+ position: relative;
+ top: 0px;
+ left: 50px;
+ margin-bottom: 5px;
+ bottom: 50px;
+ display: block;
+}
+
+/*Style Image Logo Hp*/
+.logoHp
+{
+  width: 10%;
+  position: relative;
+  top: 0px;
+  left: 50px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+/*Style Image Logo lenovo*/
+.logoLenovo
+{
+  width: 20%;
+  position: relative;
+  top: 0px;
+  left: 50px;
+  margin-bottom: 50px;
+  display: block;
+}
+
+/*Style Image Logo Samsung*/
+.logoSamsung{
+  width: 20%;
+  position: relative;
+  top: 0px;
+  left: 50px;
+  margin-bottom: 50px;
+  display: block;
+}
+
+/*Style Image Logo Second hand*/
+.logoSecondhand{
+  width: 30%;
+  position: relative;
+  top: 0px;
+  left: 50px;
+  margin-bottom: 50px;
+  display: block;
+}
+
+
+@media only screen and (max-width:600px)
+{
+
+  /*Style Image Logo  when small than 600px*/
+  .logodell{
+  width: 50%;
+  left: 100px;
+  margin-bottom: 20px;
+}
+  
+.logoacer{
+    width: 50%;
+    left: 100px;
+    margin-bottom: 50px;
+}
+
+.logoSamsung{
+  width: 60%;
+  left: 80px;
+}
+
+
+.logoLenovo
+{
+  width: 60%;
+  left: 80px;
+}
+
+.logoHp
+{
+  width:20%;
+  left: 140px;
+}
+
+.logoSecondhand
+{
+  width: 60%;
+  left: 80px;
+}
+
+  .shopbtn{
+    left: 75px;
+    width: 100px; 
+    height: 40px;
+    top: 5px;
+  }
+}
+  

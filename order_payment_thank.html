@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order done</title>
+    <style>
+        body
+        {
+        background-image: url(assets/whiteback.jpg);
+        overflow-x: hidden;
+        }
+        h1{
+            font-size: 90px;
+            font-style: oblique;
+            position: absolute;
+            top: 30% ;
+            left: 150px;
+            background-color: black;
+            color: white;
+            border: 10px gray inset;
+            border-radius: 10px;
+            animation:backgroundchange 2s ease-out infinite , colorchange 2s linear infinite,borderchange 2s linear infinite;
+        }
+        h1:hover{
+            animation-play-state: paused;
+        }
+
+        @keyframes backgroundchange{
+            0%{background-color: black;}
+            25%{background-color: darkblue;}
+            50%{background-color: lightskyblue;}
+            75%{background-color: lightcyan;}
+            100%{background-color: floralwhite;}
+        }
+
+        @keyframes colorchange{
+            0%{color: floralwhite;}
+            25%{color: lightcyan;}
+            50%{color: darkseagreen;}
+            75%{color: darkblue;}
+            100%{color: black;}
+        }
+
+        @keyframes borderchange{
+            0%{border: 5px black dashed;}
+            25%{border:5px darkslategray solid;}
+            50%{border:20px darkgray groove;}
+            75%{border:15px lightslategray outset;}
+            100%{border: 10px silver inset;}
+        }
+
+
+        @media only screen and (max-width:400px){
+            h1{
+                font-size: 50px;
+                text-align: center;
+                left: 0px;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Thank you for Purchase</h1>
+    <script>
+        setTimeout(function(){
+           window.location.href = 'index.html';
+        }, 4000);
+     </script>
+</body>
+</html>

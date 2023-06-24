@@ -1,0 +1,47 @@
+.support{
+    padding: 5em;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url(assets/whiteback.jpg);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+}
+body{
+    overflow-x: hidden;
+}
+.content {
+    font-size: 1.25em;
+}
+
+.content h1{
+    font-size: 2.5em;
+    border-bottom: 2px solid black ;
+}
+
+.content iframe{
+    margin: 1.5em 0;
+    width: 25em;
+    height: 25em;
+    filter: invert(100%);
+    border-radius: 25px;
+    box-shadow: 2px 5px 10px 10px rgb(159, 150, 150);
+}
+
+.content button{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 15px;
+}
+
+.content button:hover{
+    background-color: white;
+    color: black;
+    border:2px gray solid;
+    box-shadow: 5px 2px gray;
+}

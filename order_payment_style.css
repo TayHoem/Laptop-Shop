@@ -1,0 +1,226 @@
+body
+{
+  background-image: url(assets/whiteback.jpg);
+  overflow-x: hidden;
+  width: 100%;
+}
+
+div.title h1{
+
+    text-align: center;
+    font-size: 50px;
+    background-color: black;
+    display: block;
+    color: aliceblue;
+    max-width: 550px;
+    position: relative;
+    left: 28%;
+}
+
+div.title2{
+    display:none;
+}
+
+
+.small-container
+{
+  max-width: 550px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family:Verdana, Tahoma, sans-serif; 
+}
+
+/*Date*/
+.TodayDate{
+ text-align:center;
+ font-size: 30px;
+ font-weight: 700;
+}
+
+
+.row
+{
+    width: 100%;
+    align-items: center;
+}
+
+div.col{
+    margin: 10px;
+    width: 100%;
+}
+/*Table Styles*/
+fieldset
+{
+    max-width:600px ;
+    margin-top: 10px; ;
+}
+
+table#order_table
+{
+    margin: auto;
+    margin-bottom:20px;
+    font-size: 17px;
+    text-align: center;
+    background-color:darkslategrey ;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+th{
+    color: lightyellow;
+    padding-bottom: 5px;
+}
+
+td{
+ color: whitesmoke;
+}
+
+/*Table Styles*/
+
+
+div.pay
+{
+    margin:10px 0px;
+    border:2px black solid;
+}
+
+img.banklogo
+{
+    width: 25%;
+    height: 5%;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+label{
+    display: inline-block;
+    width: 170px;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+legend{
+    background-color: black;
+    color: darkgrey;
+    font-size: 20px;
+    margin:5px;
+}
+
+textarea{
+    display: block;
+    width: 90%;
+    height: 90px;
+    margin: 10px;
+ }
+
+#cardNum[type="text"]{
+    width: 530px;
+    height: 30px;
+}
+
+#button input[type="button"],input[type="submit"],input[type="reset"]{
+    width: 162px;
+    height: 50px;
+    background-color: black;
+    color: aliceblue;
+    font-weight: 900;
+    border-radius: 10px;
+    position: relative;
+    margin: 8px;
+    transition: all 2s;
+}
+
+#button input[type="button"]:hover,input[type="submit"]:hover,input[type="reset"]:hover{
+    background-color: white;
+    color: black;
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 10px 3px black inset;
+}
+
+
+@media only screen and (max-width:400px)
+{
+    div.title h1{
+        text-align: center;
+        font-size: 50px;
+        background-color: black;
+        display: block;
+        color: aliceblue;
+        max-width: 300px;
+        position: relative;
+        left: 10%;
+    }
+
+    label{
+        width: 100px;
+    }
+
+    img.banklogo
+    {
+    width: 20%;
+    padding-left: 10px;
+    }
+
+    #cardNum[type="text"]{
+        width: 300px;
+    }
+
+    #button input[type="button"],input[type="submit"],input[type="reset"]
+    { 
+        width: 85px;
+        height: 25px;
+    }
+}
+
+/*Printing Receipt Styles*/
+@media print{
+    .color{
+        -webkit-print-color-adjust: exact;
+        background: floralwhite;
+    }
+
+    div.title h1{display: none;}
+
+    div.title2
+    {
+        display: block;
+    }
+    input,textarea{
+        background-color:white;
+        border: none;
+    }
+
+    div.title2{
+        max-width: 500px;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-family:Verdana,
+    }
+
+    div.title2 >h1{
+        text-align: center;
+        font-size: 50px;
+        -webkit-print-color-adjust: exact;
+        width: 100%;
+        position: relative;
+        background: black;
+        display: block;
+        color: aliceblue;
+    }
+
+    div.title2 >img{
+        width:150px;
+        height: 130px;
+        position: relative;
+        left: 170px;
+    }
+
+    input,textarea{
+    -webkit-print-color-adjust: exact;
+    background:floralwhite ;
+    }
+
+    input[type='reset'], input[type='submit'],input[type='button']  {display:none; }
+    
+}

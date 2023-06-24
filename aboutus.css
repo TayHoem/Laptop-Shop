@@ -1,0 +1,42 @@
+.aboutus{
+    padding: 5em;
+    width: 100%;
+    min-height: 50%;
+    box-sizing: border-box;
+    background-image: url(assets/whiteback.jpg);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+}
+body{
+    overflow-x: hidden;
+}
+
+.aboutus article p{
+    font-size: 1.25em;
+}
+.aboutus article h1{
+    font-size: 2.5em;
+    padding: 2px;
+    border-bottom: 2px solid black ;
+}
+
+.ourObjective ul{
+    padding-left: 20px;
+}
+
+.ourObjective ul li{
+    font-size: 1.28em;
+}
+
+.ourCompany h1, .ourObjective h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.ourCompany p{
+    font-family: sans-serif;
+}
+
+.ourObjective ul{
+    font-family: sans-serif;
+}

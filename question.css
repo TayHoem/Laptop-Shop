@@ -1,0 +1,16 @@
+body{
+    background-image: url(image/images\ \(4\).jfif);
+    overflow-x: hidden;
+}
+
+body h1{
+    margin: 35px;
+    border-bottom: 2px solid black;
+}
+.submit{
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 250px;
+    height: 50px;
+}

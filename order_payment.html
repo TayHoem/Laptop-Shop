@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link href="order_payment_style.css" rel="stylesheet"/>
+    <link href="styles_validate.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="layout.css">
+    <script type="text/javascript" src="payment.js" defer></script>
+</head>
+<body>
+<div class="color"> 
+
+    <div class="title">
+        <h1>Payment</h1>
+    </div>
+    <div class="title2">
+        <img src="assets/BITS.png"/>
+        <h1>BTS</h1>
+    </div>
+
+    <div class="small-container">
+        <div class="row">
+            <form name="payment" action="order_payment_thank.html" method="get">
+                <!--Display Today Date-->
+                <div class="TodayDate">
+                    <span> 
+                    <script type="text/javascript">
+                    
+                    //create current date object
+                    var Today = new Date();
+                    var ThisDay = Today.getDate();
+                    var ThisMonth = Today.getMonth() + 1;
+                    var ThisYear = Today.getFullYear();
+                    
+                    var MonthTxt = new Array("", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October","November", "December");//array
+         
+                    document.write(ThisDay+ " " + MonthTxt[ThisMonth] + " " + ThisYear+"<br/>") 
+                    </script>
+                    </span> 
+                </div>
+                <fieldset>
+                    <legend>Order</legend>
+                    <div>
+                        <table id="order_table" border="1" style="border-collapse: collapse;border: 5px black solid;">
+                            <tr>
+                                <th>Laptop</th>
+                                <th>Quantity</th>
+                                <th>Amount(RM)</th>
+                            </tr>
+                            <tr>
+                                <th width="200">Subtotal(RM)</th>
+                                <td id="subtotal" width="300" align="right" colspan="2"></td>
+                            </tr>
+                            <tr style="margin: 5px 0px;">
+                                <th width="200">Discount(RM)</th>
+                                <td id="totalDiscount" width="300" align="right" colspan="2"></td>
+                            </tr>  
+                            <tr>
+                                <th width="200">Total(RM)</th>
+                                <td id="totalAmount" width="300" align="right" colspan="2"></td>
+                            </tr>    
+                        </table>
+                    </div>
+                </fieldset>
+                <div class="col">
+                    <label for="name">NAME&#9823;</label>
+                    <input name="cusName" id="name"type="text" placeholder="First and Last name" required/>
+                </div>
+                <div class="col">
+                    <label for="phoneNum">PHONE NUMBER&phone;</label>
+                    <input name="cusPhone" id="phoneNum" type="tel"
+                    placeholder="000-00000000" 
+                    pattern="[0-9]{3}-[0-9]{8}" required/> 
+                </div>
+                <div class="col">
+                <label for="cusEmail">EMAIL&#9993;</label>
+                <input name="cusEmail" id="cusEmail" type="email" placeholder="YouEmail@email.com" required/>
+                </div class="col">
+                <fieldset>
+                    <legend>Address</legend>
+                    <textarea name="deliveryAddress" id="address" placeholder="Enter Your Address" required></textarea>
+                </fieldset>
+                <div class="col">
+                    <h3>Choose your Delivery Method</h3>
+                    <input name="deliType"id="postL" type="radio" checked/>
+                    <label for="postL">POSTLAJU</label>
+                    <input name="deliType" id="ninja" type="radio"/>
+                    <label for="ninja">NINJA VAN</label>
+                </div>
+                <div class="col">
+                    <h3>Choose your Payment Method</h3>
+                    <input name="payType"id="onlineBank" type="radio" checked/>
+                    <label for="onlineBank">Online Banking</label>
+                    <input name="payType"id="cash" type="radio"/>
+                    <label for="cash">Cash on Delivery</label>
+                </div>
+                <div class="col">
+                    <label for="cardNum" style="font-size: 15px;font-weight:700;">Card Number&#10224;</label>
+                    <input name="cardNum" id="cardNum" type="text" placeholder="12345678923475689" pattern="[0-9]{16}" required />
+                </div>
+                <div class="col pay">
+                    <input name="nameBank" id="publicBank" type="radio" checked/>
+                    <img src="Bank/public.png" alt="publicBank" class="banklogo">
+                    <input name="nameBank" id="maybank" type="radio"/>
+                    <img src="Bank/maybank.png" alt="publicBank" class="banklogo">
+                    <input name="nameBank" id="visa" type="radio"/>
+                    <img src="Bank/visa.png" alt="visa" class="banklogo">
+                </div>
+                <div id="button">
+                    <input value="BACK" type="button" onclick="back()"/>
+                    <input value="PAY" type="submit"/>
+                    <input value="CANCEL" type="button" onclick="cancel()" />
+                </div>               
+            </form>
+        </div>
+    </div>
+</div>      
+<script>
+
+
+
+  
+
+    //Styles change when validate 
+    window.onload = init;
+    
+    function init(){
+        var items = JSON.parse(localStorage.getItem("names"));
+        var quantity =JSON.parse(localStorage.getItem("qty"));
+        var price =JSON.parse(localStorage.getItem("amount"));
+        var subtotal = localStorage.getItem("subtotal");
+        var discount = localStorage.getItem("discount");
+        var totalAmount = localStorage.getItem("total");
+        let table = document.getElementById("order_table");
+        
+
+        console.log(items.length);
+        for (let i = 0; i < items.length; i++)
+        {
+            row = table.insertRow(i+1);
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1); 
+            var cell3 = row.insertCell(2);
+
+            cell1.innerHTML = items[i];
+            cell2.innerHTML = quantity[i];
+            cell3.innerHTML = price[i];
+            
+        }
+        
+        document.getElementById("subtotal").innerHTML = subtotal;
+        document.getElementById("totalDiscount").innerHTML = discount;
+        document.getElementById("totalAmount").innerHTML = totalAmount;
+
+        document.getElementById("cash").onclick = turnOffOnlineBanking;
+        document.getElementById("onlineBank").onclick = turnOnOnlineBanking;
+    
+    }
+    
+    function turnOffOnlineBanking()
+    {
+        document.getElementById("publicBank").disabled=true;
+        document.getElementById("maybank").disabled=true;
+        document.getElementById("visa").disabled=true;
+        document.getElementById("cardNum").disabled=true;
+    }
+    
+    function turnOnOnlineBanking()
+    {
+        document.getElementById("publicBank").disabled=false;
+        document.getElementById("maybank").disabled=false;
+        document.getElementById("visa").disabled=false;
+        document.getElementById("cardNum").disabled=false;
+    }
+</script>    
+</body>
+</html>
