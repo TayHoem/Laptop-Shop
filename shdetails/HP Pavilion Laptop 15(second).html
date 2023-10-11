@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Store Product Details SH</title>
+    <link rel="stylesheet" href="../styles_product.css">
+    <link rel="stylesheet" href="../layout.css">
+    <link rel="stylesheet" href="../index.css">
+    <script>
+        //Function go to cart
+       window.onclick = goCart;
+        function goCart(){
+        window.location.href ='../cart.html';
+        }
+    </script>
+</head>
+<body>
+    <header> <!--Navigation bar-->
+        <div class="navibar">
+                    <a href="../index.html"><img src="../assets/BITS.png" alt="logo"></a>
+                    <div class="navicon">
+                      <img id="gear" src="../assets/extralogo.png" alt="">
+                      </div>
+                    <div class="buttons">
+                    <div class="dropstore">
+                        <button class="storebtn">Store</button>
+                        <div class="storecontent">
+                          <a href="../store_acer.html">Acer</a>
+                          <a href="../store_dell.html">Dell</a>
+                          <a href="../store_hp.html">HP</a>
+                          <a href="../store_lenovo.html">Lenovo</a>
+                          <a href="../store_samsung.html">Samsung</a>
+                          <a href="../store_secondhand.html">Second Hand</a>
+                        </div>
+                        </div>
+                        <div class="dropaccount">
+                          <button class="accountbtn">Account</button>
+                          <div class="accountcontent">
+                            <a href="../membership.html">Membership</a>
+                            <a href="../register.html">Login</a>
+                            <a href="../register.html">Register</a>
+                            <a href="../cart.html">Cart</a>
+                          </div>
+                        </div>
+                      <a href="../News_promotion.html"><button class="otherbtn">News & Promotions</button></a>
+                      <a href="../feedback.html"><button class="otherbtn">Feedback</button></a>
+                    </div>
+                </div>
+            </div>  
+    </header>
+
+    <!--Product details-->
+<div class="product">  
+    <img class="logoSecondhand" src="../Secondhand/logo secondhand.png" alt="" >
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="../Secondhand/hp pavilion 15.jpg" alt="HP Pavilion Laptop 15" style="width:400px; height:250px;"/>
+            </div>
+            <div class="col-2" id="directory">
+               <h1>HP Pavilion Laptop 15</h1>
+               <h3>RM 2199</h3>
+               <h3>HIGHLIGHTS</h3>
+                <ul>
+                    <li>11th Gen. Intel® Core™ i7-1195G7 (up to 5.0 GHz, 12 MB L3 cache, 4 cores, 8 threads)</li>
+                    <li>16GB LPDDR4 RAM</li>
+                    <li>512MB NVMe PCIe Gen4 SSD</li>
+                    <li>Intel® Iris® Xe Graphics</li>
+                    <li>15.6", FHD+ 1920x1200, 60Hz, WVA, TrueLife™, Narrow Border, Pen Support</li>
+                    <li>Window 11 </li>
+                </ul>
+               <button onclick="goCart()">&#10157;Add to cart</button>
+            </div>
+        </div>
+    </div>
+</div>  
+<h1 id="detail">&#9876;SPECIFICATIONS&#9876;</h1>
+<section>
+    <table>
+        <colgroup>
+            <col class="compenentColumn">
+            <col class="detailColumn">
+         </colgroup>
+        <tr id="OS">
+            <th>OERATING SYSTEM</th>
+            <td>Window 11 </td>
+        </tr>
+        <tr id="processor">
+            <th>PROCESSOR</th>
+            <td>11th Gen Intel® Core™ i7-1195G7
+                <ul>
+                <li>12M Cache,3.5Ghz</li>
+                <li>Max Turbo Frequency 5.0GHz</li>
+                </ul>
+            </td>
+        </tr>
+        <tr id="memory">
+            <th>MEMORY</th>
+            <td>8GB LPDDR4 RAM</td>
+        </tr>
+        <tr>
+            <th id="storege">STORAGE</th>
+            <td>512MB M.2 PCIe NVMe SSD</td>
+        </tr>
+        <tr id="keyboard">
+            <th>KEYBOARD</th>
+            <td>-</td>
+        </tr>
+        <tr id="display">
+            <th>DISPLAY</th>
+            <td>15.6", FHD+ 1920x1200, 60Hz, WVA, TrueLife™, Narrow Border, Pen Support</td>
+        </tr>
+        <tr id="grahpics">
+            <th>GRAPHICS</th>
+            <td>Intel® Iris® Xe Graphics</td>
+        </tr>
+        <tr id="connectivity">
+            <th>CONNECTIVITY</th>
+            <td>Bluetooth® 5.2
+                Intel® Wireless Wi-Fi 6E AX211
+                <ul>
+               
+                <li>Dual Band (2.4 GHz and 6 GHz)</li>
+                <li>2x2 MU-MIMO technology</li>
+                <li>Wi-Fi PCIe interface</li>
+                </ul>
+            </td>
+        </tr>
+        <tr id="camera">
+            <th>CAMERA</th>
+            <td>720p HD</td>
+        </tr>
+        <tr id="audio">
+            <th>AUDIO AND SPEAKER</th>
+            <td>Stereo speakers with Waves MaxxAudio® Pro, 2 W x 2</td>
+        </tr>
+        <tr id="battery">
+            <th>BATTERY</th>
+            <td>4 Cell, 54 Wh,integrated</td>
+        </tr>
+        <tr id="interface">
+            <th>INTERFACE</th>
+            <td>
+                HDMI® port with HDCP support
+            <ul>
+                <li>1 USB 3.2 Gen 1 Type-A port with PowerShare</li>
+                <li>1 USB 3.2 Gen 1 Type-A ports</li>
+                <li>1 headset (headphone and microphone combo) port</li>
+               
+            </ul>
+            </td>
+        </tr>
+        <tr id="dimention">
+            <th>DIMENSIONS</th>
+            <td>314 (W) x 227.50 (D) x 18.50 (H) mm</td>
+        </tr>
+        <tr id="weight">
+            <th>WEIGHT</th>
+            <td>1.47kg</td>
+        </tr>
+    </table>
+</section>
+
+<div class="footer">
+    <a href="../index.html"><h1>BITS</h1></a>
+    <a href="../support.html">Support<br></a>
+    <a href="../aboutus.html">About Us</a>
+ </div>
+   
+</body>
+</html>

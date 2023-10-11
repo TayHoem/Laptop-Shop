@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Store Product Details Samsung</title>
+    <link rel="stylesheet" href="../styles_product.css">
+    <link rel="stylesheet" href="../layout.css">
+    <link rel="stylesheet" href="../index.css">
+    <script>
+        //Function go to cart
+       window.onclick = goCart;
+        function goCart(){
+        window.location.href ='../cart.html';
+        }
+    </script>
+</head>
+<body>
+    <header> <!--Navigation bar-->
+        <div class="navibar">
+                    <a href="../index.html"><img src="../assets/BITS.png" alt="logo"></a>
+                    <div class="navicon">
+                      <img id="gear" src="../assets/extralogo.png" alt="">
+                      </div>
+                    <div class="buttons">
+                    <div class="dropstore">
+                        <button class="storebtn">Store</button>
+                        <div class="storecontent">
+                          <a href="../store_acer.html">Acer</a>
+                          <a href="../store_dell.html">Dell</a>
+                          <a href="../store_hp.html">HP</a>
+                          <a href="../store_lenovo.html">Lenovo</a>
+                          <a href="../store_samsung.html">Samsung</a>
+                          <a href="../store_secondhand.html">Second Hand</a>
+                        </div>
+                        </div>
+                        <div class="dropaccount">
+                          <button class="accountbtn">Account</button>
+                          <div class="accountcontent">
+                            <a href="../membership.html">Membership</a>
+                            <a href="../register.html">Login</a>
+                            <a href="../register.html">Register</a>
+                            <a href="../cart.html">Cart</a>
+                          </div>
+                        </div>
+                      <a href="../News_promotion.html"><button class="otherbtn">News & Promotions</button></a>
+                      <a href="../feedback.html"><button class="otherbtn">Feedback</button></a>
+                    </div>
+                </div>
+            </div>  
+    </header>
+
+    <!--Product details-->
+<div class="product">  
+    <img class="logobrand" src="../Samsung/samsung logo.png" alt="">
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="../Samsung/Galaxy-Book-Go-Compare.webp" alt="Samsung Galaxy Book Go"/>
+            </div>
+            <div class="col-2" id="directory">
+               <h1>Samsung Galaxy Book Go</h1>
+               <h3>RM 2199</h3>
+               <h3>HIGHLIGHTS</h3>
+                <ul>
+                    <li>Qualcomm® Snapdragon™ 7c Gen 2 compute platform</li>
+                    <li>4GB LPDDR4X RAM</li>
+                    <li>128GB NVMe PCIe Gen4 SSD</li>
+                    <li>Qualcomm® Adreno™ GPU</li>
+                    <li>14" FHD(1920 x 1080) </li>
+                    <li>Windows 10 </li>
+                </ul>
+               <button onclick="goCart()">&#10157;Add to cart</button>
+            </div>
+        </div>
+    </div>
+</div>  
+<h1 id="detail">&#9876;SPECIFICATIONS&#9876;</h1>
+<section>
+    <table>
+        <colgroup>
+            <col class="compenentColumn">
+            <col class="detailColumn">
+         </colgroup>
+        <tr id="OS">
+            <th>OERATING SYSTEM</th>
+            <td>Windows 10 </td>
+        </tr>
+        <tr id="processor">
+            <th>PROCESSOR</th>
+            <td>Qualcomm® Snapdragon™ 7c Gen 2 compute platform
+                <ul>
+                <li>1.1GHz, 4M Cache, 2Threads 6Cores</li>
+                <li>Max Turbo Frequency 2.55GHz</li>
+                </ul>
+            </td>
+        </tr>
+        <tr id="memory">
+            <th>MEMORY</th>
+            <td>4GB LPDDR4X RAM</td>
+        </tr>
+        <tr id="storage">
+            <th>STORAGE</th>
+            <td>128GB SSD</td>
+        </tr>
+        <tr id="keyboard">
+            <th>KEYBOARD</th>
+            <td>-</td>
+        </tr>
+        <tr id="display">
+            <th>DISPLAY</th>
+            <td>14" FHD(1920 x 1080)</td>
+        </tr>
+        <tr id="grahpics">
+            <th>GRAPHICS</th>
+            <td>Qualcomm® Adreno™ GPU</td>
+        </tr>
+        <tr id="connectivity">
+            <th>CONNECTIVITY</th>
+            <td>Wi-Fi 5, 802.11 ac 2 x 2,
+                Bluetooth v5.1
+               
+            </td>
+        </tr>
+        <tr id="camera">
+            <th>CAMERA</th>
+            <td>720p HD</td>
+        </tr>
+        <tr id="audio">
+            <th>AUDIO AND SPEAKER</th>
+            <td>Stereo Speakers (1.5W x 2) 3.5mm Headphone out</td>
+        </tr>
+        <tr id="battery">
+            <th>BATTERY</th>
+            <td>42.3WHrs Max Run Times 13 Hours</td>
+        </tr>
+        <tr id="interface">
+            <th>INTERFACE</th>
+            <td>
+                HDMI® port with HDCP support
+            <ul>
+                <li>1 x USB 2.0</li>
+                <li>2 x USB-C</li>
+                <li>1 x  3.5pi Headphone/Mic</li>
+                
+            </ul>
+            </td>
+        </tr>
+        <tr id="dimension">
+            <th>DIMENSIONS</th>
+            <td>323.9 (W) x 224.8 (D) x 14.9 (H) mm</td>
+        </tr>
+        <tr id="weight">
+            <th>WEIGHT</th>
+            <td>1.38 kg</td>
+        </tr>
+    </table>
+</section>
+
+<div class="footer">
+    <a href="../index.html"><h1>BITS</h1></a>
+    <a href="../support.html">Support<br></a>
+    <a href="../aboutus.html">About Us</a>
+ </div>
+   
+</body>
+</html>
