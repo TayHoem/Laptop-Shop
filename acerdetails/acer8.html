@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Store Product Details</title>
+    <link rel="stylesheet" href="../styles_product.css">
+    <link rel="stylesheet" href="../layout.css">
+    <script>
+        //Function go to cart
+       window.onclick = goCart;
+        function goCart(){
+        window.location.href ='../cart.html';
+        }
+    </script>
+</head>
+<body>
+    <header> <!--Navigation bar-->
+        <div class="navibar">
+                    <a href="../index.html"><img src="../assets/BITS.png" alt="logo"></a>
+                    <div class="navicon">
+                      <img id="gear" src="../assets/extralogo.png" alt="">
+                      </div>
+                    <div class="buttons">
+                    <div class="dropstore">
+                        <button class="storebtn">Store</button>
+                        <div class="storecontent">
+                          <a href="../store_acer.html">Acer</a>
+                          <a href="../store_dell.html">Dell</a>
+                          <a href="../store_hp.html">HP</a>
+                          <a href="../store_lenovo.html">Lenovo</a>
+                          <a href="../store_samsung.html">Samsung</a>
+                          <a href="../store_secondhand.html">Second Hand</a>
+                        </div>
+                        </div>
+                        <div class="dropaccount">
+                          <button class="accountbtn">Account</button>
+                          <div class="accountcontent">
+                            <a href="../membership.html">Membership</a>
+                            <a href="../register.html">Login</a>
+                            <a href="../register.html">Register</a>
+                            <a href="../cart.html">Cart</a>
+                          </div>
+                        </div>
+                      <a href="../News_promotion.html"><button class="otherbtn">News & Promotions</button></a>
+                      <a href="../feedback.html"><button class="otherbtn">Feedback</button></a>
+                    </div>
+                </div>
+            </div>  
+    </header>
+    <!--Product details-->
+<div class="product">  
+    <img class="logobrand" src="../Acer/acerlogo.png" alt="">
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="../Acer/acer8.png" alt="Spin 5 (SP513-55N-517D)"/>
+            </div>
+            <div class="col-2" id="directory">
+               <h1>Spin 5 (SP513-55N-517D) Intel®</h1>
+               <h3>RM 4599</h3>
+               <h3>HIGHLIGHTS</h3>
+                <ul>
+                    <li>Intel Core i5-1135G7 Processor (2.4Ghz up to 4.2Ghz, 8MB Cache, 8Threads, 4Cores)</li>
+                    <li>8GB LPDDR4X RAM</li>
+                    <li>512GB NVMe PCIe Gen4 SSD</li>
+                    <li>Intel Iris Xe Graphics</li>
+                    <li>13.5" QHD (2256x1504) IPS Acer Cine Crystal LED Backlit Touch Display </li>
+                    <li>Window 11</li>
+                </ul>
+               <button onclick="goCart()">&#10157;Add to cart</button>
+            </div>
+        </div>
+    </div>
+</div>  
+<h1 id="detail">&#9876;SPECIFICATIONS&#9876;</h1>
+<section>
+    <table>
+        <colgroup>
+            <col class="compenentColumn">
+            <col class="detailColumn">
+         </colgroup>
+        <tr id="OS">
+            <th>OERATING SYSTEM</th>
+            <td>Window 11</td>
+        </tr>
+        <tr id="processor">
+            <th>PROCESSOR</th>
+            <td>Intel Core i5-1135G7 Processor
+                <ul>
+                <li>2.4GHz, 8M Cache, 8Threads 4Cores</li>
+                <li>Max Turbo Frequency 4.2GHz</li>
+                </ul>
+            </td>
+        </tr>
+        <tr id="memory">
+            <th>MEMORY</th>
+            <td>8GB LPDDR4X RAM</td>
+        </tr>
+        <tr id="storage">
+            <th>STORAGE</th>
+            <td>512GB PCIe NVMe SSD</td>
+        </tr>
+        <tr id="keyboard">
+            <th>KEYBOARD</th>
+            <td>-</td>
+        </tr>
+        <tr id="display">
+            <th>DISPLAY</th>
+            <td>13.5" QHD (2256x1504) IPS Acer Cine Crystal LED Backlit Touch Display</td>
+        </tr>
+        <tr id="grahpics">
+            <th>GRAPHICS</th>
+            <td>Intel Iris Xe Graphics</td>
+        </tr>
+        <tr id="connectivity">
+            <th>CONNECTIVITY</th>
+            <td>
+                <ul>
+                <li>KillerTM</li>
+                <li>Wi-Fi 6</li>
+                <li>2x2 MU-MIMO technology</li>
+                <li>AX 1650i with Dual Band (2.4 GHz and 5 GHz)</li>
+                </ul>
+            </td>
+        </tr>
+        <tr id="camera">
+            <th>CAMERA</th>
+            <td>HD webcam with 1280 x 720 resolution and Super high dynamic range (SHDR)</td>
+        </tr>
+        <tr id="audio">
+            <th>AUDIO AND SPEAKER</th>
+            <td>Yes</td>
+        </tr>
+        <tr id="battery">
+            <th>BATTERY</th>
+            <td>56 Wh, 4-cell, LItium Ion(Li-ion) battery</td>
+        </tr>
+        <tr id="interface">
+            <th>INTERFACE</th>
+            <td>
+                <ul>
+                    <li>USB Type-CTM port: USB 3.2 Gen 2 (up to 10 Gbps) ThunderboltTM 4</li>
+                    <li>2 x USB Type-CTM ports</li>
+                    <li>USB 3.2 Gen 2 port featuring power-off USB charging</li>
+                    <li>USB 3.2 Gen 1 port HDMI® 2.0 port with HDCP support</li> 
+                    <li>microSDTM Card reader</li>
+                    <li>3.5 mm headphone/speaker jack</li>
+                </ul>
+            </td>
+        </tr>
+        <tr id="dimension">
+            <th>DIMENSIONS</th>
+            <td>300 (W) x 235 (D) x 14.9 (H) mm</td>
+        </tr>
+        <tr id="weight">
+            <th>WEIGHT</th>
+            <td>1.2 kg</td>
+        </tr>
+    </table>
+</section>
+
+<div class="footer">
+    <a href="../index.html"><h1>BITS</h1></a>
+    <a href="../support.html">Support<br></a>
+    <a href="../aboutus.html">About Us</a>
+ </div>
+   
+</body>
+</html>
